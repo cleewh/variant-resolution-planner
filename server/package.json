@@ -1,0 +1,26 @@
+{
+  "name": "variant-resolution-planner-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional Amazon Bedrock explanation backend for the Variant Resolution Planner.",
+  "main": "dist/handler.js",
+  "scripts": {
+    "dev": "tsx watch src/local.ts",
+    "start": "tsx src/local.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.687.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.16.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
